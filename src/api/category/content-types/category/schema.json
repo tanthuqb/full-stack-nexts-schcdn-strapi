@@ -26,6 +26,12 @@
     },
     "description": {
       "type": "text"
+    },
+    "product_id": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "category_id"
     }
   }
 }
